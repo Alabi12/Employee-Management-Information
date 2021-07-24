@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    width: 100%;
+    background: #001923 ;
+    color: #000;
+    overflow: hidden;
+}
+section::before{
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(#ffeb3b, #e91e63);
+    border-radius: 50%;
+    transform: translate(-420px,-90px);
+}
+section::after{
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(#2196f3, #83d8ff);
+    border-radius: 50%;
+    transform: translate(400px,180px);
+}
+.container{
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+    max-width: 1000px;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0.25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-right: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    backdrop-filter: blur(25px);
+
+}
+.container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left:-40%;
+    width: 200%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+    transform: skewX(-20deg);
+}
+
+Form{
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+    max-width: 1000px;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0.25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-right: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(30px);
+
+}
+Form.Label{
+    color: #000
+ }
+.heading{
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    color: khaki;
+    border-radius: 10px;
+    backdrop-filter: blur(30px);
+}
+.heading2{
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    color: green;
+    margin-top: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(30px);
+}
+
+
